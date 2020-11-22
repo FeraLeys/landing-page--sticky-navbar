@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Sticky Navbar</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="squel-h">
+      <a href="" class="logo">SpaceX</a>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </header>
+
+    <section class="banner">
+      <div class="content">
+        <div class="hello">
+          <h1 class="ls">SpaceX is <span></span></h1>
+          <p class="ns">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Praesentium sit, iusto earum nemo deserunt eum dolorum nesciunt quam
+            culpa illo rerum ex delectus maxime excepturi ipsam ab libero esse
+            unde.</p>
+          <div class="btn">Buy</div>
+        </div>
+      </div>
+
+
+
+      <script>
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+    </body>
+  </html>
